@@ -14,8 +14,6 @@ public class FormScreenTest {
         try {
             AppiumDriver<MobileElement> appiumDriver = DriverFactory.getAndroidDriver();
             appiumDriver.manage().timeouts().implicitlyWait(5L, TimeUnit.SECONDS);
-            MobileElement loginLabel = appiumDriver.findElementByAccessibilityId("Login");
-            loginLabel.click();
             MobileElement formLabel = appiumDriver.findElement(MobileBy.AccessibilityId("Forms"));
             formLabel.click();
         }finally {

@@ -18,8 +18,15 @@ public class ServerTest {
 
             MobileElement loginLabel = appiumDriver.findElementByAccessibilityId("Login");
             loginLabel.click();
-            MobileElement formLabel = appiumDriver.findElement(MobileBy.AccessibilityId("Forms"));
-            formLabel.click();
+
+            MobileElement userNameTbx = appiumDriver.findElementByAccessibilityId("input-email");
+            userNameTbx.sendKeys("ando@test.com");
+
+            MobileElement passwordTbx = appiumDriver.findElementByAccessibilityId("input-password");
+            passwordTbx.sendKeys("TeoDo");
+
+            MobileElement loginBtn = appiumDriver.findElementByAccessibilityId("button-LOGIN");
+            passwordTbx.click();
 
             Thread.sleep(2000);
             //Press Back button
