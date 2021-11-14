@@ -1,4 +1,4 @@
-package lession13;
+package lesson13;
 
 import caps.MobileCapabilityTypeEx;
 import io.appium.java_client.AppiumDriver;
